@@ -1,0 +1,128 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+ }
+ 
+ body {
+   background-color: #fefae0;
+ }
+ 
+ header, h1, h2, h3 {
+  font-family: 'Playfair Display', serif; 
+ }
+ 
+ article li, p {
+   font-family: 'Poppins', sans-serif;
+   color: #343a40;
+ }
+ 
+ .section-header {
+   font-size: 30px;
+ }
+ 
+ /* Guide I used for a fixed sidebar: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp*/
+ #navbar {
+   height: 100%; /* Make it full height of page */
+   width: 300px;
+   position: fixed; /* Stay in Place */
+   z-index: 1; /* Always on top of all elements */
+   top: 0;
+   left: 0; /*Stick to the top and to the left*/
+   background-color: #001219;
+   overflow-x: hidden; /* No horizontal scroll */
+ }
+ 
+ #header {
+   font-size: 25px;
+   color: #fff;
+   padding: 10px 0 10px 10px;
+ }
+ 
+ nav ul {
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+ 
+ nav li {
+   padding: 6px 8px 6px 8px;
+   text-decoration: none;
+   display: block;
+   font-family: 'Poppins', sans-serif;
+   border-top: double;
+   border-color: #fff;
+ }
+ 
+ .nav-link {
+   color: #fff;
+   text-decoration: none;
+ }
+ 
+ .nav-link:hover {
+   color: #8d99ae;
+ }
+ 
+ /* Formatting main section */
+ main {
+   margin-left: 310px;
+   padding: 30px 30px ;
+ }
+ 
+ section {
+   padding-bottom: 30px;
+ }
+ 
+ .main-section header {
+   border-top: solid 1px;
+   border-color: #cad2c5;
+   padding-top: 10px;
+ }
+ 
+ article ul, code {
+   padding-left: 50px;
+ }
+ 
+ img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 40%;
+ }
+ 
+ /* Taken from FCC Code */
+ code {
+   display: block;
+   text-align: left;
+   white-space: pre-line;
+   position: relative;
+   word-break: normal;
+   word-wrap: normal;
+   line-height: 2;
+   background-color: #cad2c5;
+   padding: 15px;
+   margin: 10px;
+   border-radius: 5px;
+ }
+ 
+ /* Add media query for smaller screens */
+ /* Reference: https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp */
+ @media (max-width: 700px) {
+   #navbar {
+     width: 100%;
+     height: auto;
+     position: relative;
+     padding-bottom: 10px;
+     text-align: center;
+   }
+   
+   main {
+     margin: 0 auto;
+     width: 400px;
+     padding: 0;
+   }
+   
+ }

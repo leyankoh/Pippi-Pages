@@ -1,0 +1,66 @@
+html {
+    font-family: Calibri;
+    color: #2e2e2e;
+    
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #bdfafc, #fce0bd);
+    margin: 0;
+  }
+  
+  #header {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    padding: 50px;
+    margin: 0px;
+  }
+  
+  h1 {
+    font-family: Calibri;
+    color: #1a1919;
+    font-size: 2.4rem;
+    margin-top: -30px;
+    line-height: 1.5;
+  }
+  
+  #tribute-info {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+  }
+  
+  #subtitle {
+    font-family: Arial;
+    color: #424242 !Important;
+    margin-top: -30px;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #img-caption {
+    text-align: center;
+    margin: 15px 0 5px 0;
+  }
+  
+  #pippi-traits{
+    line-height: 1.5;
+  }
+  
+  ul {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  p {
+    text-align: center;
+  }

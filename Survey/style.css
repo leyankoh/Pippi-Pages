@@ -1,0 +1,59 @@
+html {
+    font-family: Arial;
+    background-image: url('./pexels-arina-krasnikova-7726104.jpg');
+    background-position: center;
+}
+
+.header {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+}
+
+
+form {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+label {
+  text-height: 1.6rem;
+}
+
+.form-group{
+  margin-top: 10px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  text-height: 1.6rem;
+  margin-top: 10px;
+}
+
+/* centers the form on the page*/
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+/* if device width is more than or equal to 576px, then display max width 540px*/
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* if device width is more than or equal to 768px, then display max width of 720px*/
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.input-textarea {
+  width: 100%;
+  resize: vertical;
+  font-family: Arial;
+}

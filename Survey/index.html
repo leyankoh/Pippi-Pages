@@ -1,0 +1,68 @@
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<div id="full-page" class="container">
+    <header class="header">
+      <h1 id="title">Cat Adoption Form</h1>
+      <p id="description">Fill in your form and get a Pipp-like cat today!</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+      </div>
+      <div class="form-group">
+      <label id="email-label" for="email"> Email </label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"> Phone Number </label>
+        <input type="number" name="phone-number" id="number" class="form-control" placeholder="Enter your phone number" min="0" max="999999999999999"/>
+      </div>
+      <div class="form-group">
+        <label id="age-label" for="number"> Age </label>
+        <input type="number" name="age" id="age" class="form-control" placeholder="Enter your age." min="18" max="99"/>
+      </div>
+      <div class="form-group">
+        <p>What kind of cat colouring do you prefer?</p>
+        <select id="dropdown" name="cat-color" class="form-control" required>
+          <option disabled selected value>Select a colour</option>
+          <option value="black" disabled>Black</option>
+          <option value="white" disabled>White</option>
+          <option value="tabby" disabled>Tabby</option>
+          <option value="tuxedo">Tuxedo (This is the correct answer)</option>
+          <option value="tuxedo">Also Tuxedo - You can't choose</option>
+          <option value="calico" disabled>Calico</option>
+          <option value="tortie" disabled>Tortie</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Do you want a cat like Pippi?</p>
+        <label>
+          <input name="user-recommend" value="Yes" type="radio" class="input-radio" checked/>Yes
+        </label>
+        <label>
+          <input name="user-recommend" value="Yes" type="radio" class="input-radio" checked/>Yes
+        </label>
+      </div>
+      
+      <div class="form-group">
+        <p>Select the reasons why you like a Pippi</p>
+        <label><input name="prefer" value="cute" type="checkbox"/>She's Cute</label>
+        <label><input name="prefer" value="sassy" type="checkbox"/>She's Sassy</label>
+        <label><input name="prefer" value="best-cat" type="checkbox"/>She's the best cat in the world</label>
+      </div>
+      
+      <div class="form-group">
+        <p> Explain reasons why you deserve a Pippi </p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your reasons...">  </textarea>
+      </div>
+      
+       <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+      
+    </form>
+  </div>

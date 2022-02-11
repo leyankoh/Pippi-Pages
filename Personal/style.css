@@ -1,0 +1,257 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+ }
+ 
+ .container {
+   position: relative;
+   height: 100vh;
+ }
+ 
+ /* https://grid.layoutit.com/*/
+ .about-grid {
+   display: grid;
+   grid-template-columns: 0.6fr 1.8fr 0.6fr; 
+   grid-template-rows: 0.8fr 1.4fr 0.8fr; 
+   gap: 0px 0px; 
+   grid-template-areas: 
+     ". . ."
+     ". . ."
+     ". . ."; 
+ }
+ 
+ body {
+   background-color: rgb(236, 219, 186);
+ }
+ 
+ h1 {
+   font-family: 'DM Serif Display', serif;
+   font-size: 36px;
+ }
+ 
+ h2 {
+   font-family: 'DM Serif Display', serif;
+   font-size: 24px;
+   color: #22223b;
+   padding-bottom: 10px;
+ }
+ 
+ 
+ p {
+   font-family: 'Poppins', sans-serif;
+   color: #4a4e69;
+   padding-bottom: 5px;
+ }
+ 
+ /* Style Nav */
+ .nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   width: 100%;
+   height: 50px;
+   background-color: rgb(25, 25, 25);
+   position: fixed;
+   z-index: 10; /*make sure it stays on top */
+ }
+ 
+ #nav-list {
+   display: flex;
+   margin-right: 20px;
+   padding-top: 5px;
+   font-family: 'DM Serif Display', serif;
+   font-size: 24px;
+ }
+ 
+ nav li {
+   text-decoration: none;
+   list-style-type: none;
+   margin-right: 20px;
+ }
+ 
+ #nav-list a {
+   text-decoration: none;
+   color: rgb(236, 219, 186);
+ }
+ 
+ #nav-list a:hover {
+   color: rgb(145, 140, 129);
+ }
+ 
+ /* Style Welcome */
+ .welcome-header{
+   margin: 0 auto;
+   font-size: 48px;
+   font-color: rgb(25, 25, 25);
+ }
+ 
+ /* Generated with https://mdbootstrap.com/docs/standard/tools/design/gradients/ */
+ .gradient {
+   /* fallback for old browsers */
+   background: #6a11cb;
+ 
+   /* Chrome 10-25, Safari 5.1-6 */
+   background-image: -webkit-linear-gradient(to right, rgba(254, 173, 166, 0.2), rgba(245, 239, 239, 0.2)), 
+     url('./Images/v567-mynt-doodles-01.jpg');
+ 
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background-image: linear-gradient(to right, rgba(254, 173, 166, 0.2), rgba(245, 239, 239, 0.2)),
+     url('./Images/v567-mynt-doodles-01.jpg');
+   
+   background-size: cover;
+   background-position: center;
+ }
+ 
+ .block-container {
+   display: inline-block;
+   padding-top: 200px;
+   padding-left: 40%;
+   text-align: center;
+ }
+ 
+ @media (max-width: 900px) {
+     .welcome-header{
+     margin: 0 auto;
+     font-size: 48px;
+   }  
+   
+   .block-container {
+     display: inline-block;
+     padding-top: 300px;
+     padding-left: 60px;
+     text-align: center;
+   }
+ }
+ 
+ @media (max-width: 500px) {
+     .welcome-header {
+     margin: 0 auto;
+     font-size: 36px;
+   }  
+   
+   .block-container {
+     display: inline-block;
+     padding-top: 40%;
+     padding-left: 20%;
+     text-align: center;
+   }
+ }
+ 
+ @media (max-width: 400px) {
+     .welcome-header {
+     margin: 0 auto;
+     font-size: 24px;
+   }  
+   
+   .block-container {
+     display: inline-block;
+     padding-top: 40%;
+     text-align: center;
+   }
+ }
+ 
+ 
+ /* Animation */
+ /* https://daily-dev-tips.com/posts/typewriter-effect-css/ */
+ .typewriter {
+   border-right: 5px solid rgb(25, 25, 25);
+   animation: blink 1s steps(1) infinite;
+ }
+ 
+ .typewriter-content {
+   width: 0;
+   overflow: hidden;
+   white-space: nowrap;
+   animation: typing 4s steps(35) 1s 1 normal both, blink 1s steps(1) infinite;
+ }
+ 
+ 
+ @keyframes blink {
+   50% {
+     border-color: transparent;
+   }
+ }
+ 
+ @keyframes typing {
+   from {
+     width: 0;
+   }
+   to {
+     width: 100%;
+   }
+ }
+ 
+ /* Style About Section */
+ #about {
+   height: 75vh;
+ }
+ 
+ 
+ /* Inspired card style by */
+ /* https://codepen.io/fossheim/pen/LYVOBRZ */
+ .about-card {
+   background-color: #f2e9e4;
+   grid-column: 2 / 3;
+   grid-row: 2 / 3;
+   padding: 15px;
+   
+   border: 3px solid #f94144;
+   box-shadow: 10px -10px 0 -3px rgb(236, 219, 186), 10px -10px #f3722c,
+     20px -20px 0 -3px rgb(236, 219, 186), 20px -20px #f8961e,
+     30px -30px 0 -3px rgb(236, 219, 186), 30px -30px #90be6d,
+     40px -40px 0 -3px rgb(236, 219, 186), 30px -30px #277da1;
+ }
+ 
+ 
+ /* Begin Projects Section */
+ 
+ #projects {
+   background-color: #b56576;
+   padding: 50px;
+ }
+ 
+ /* Gave up and used FCC's magic grid - mine didn't work so responsively */
+ .project-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: 30px;
+   width: 100%;
+   max-width: 1280px;
+   margin: 0 auto;
+ }
+ 
+ 
+ .project-tile {
+   background-color: #f2e9e4;
+   box-shadow: 10px -10px 0 -3px;
+   text-align: center;
+   padding: 20px;
+ }
+ 
+ .project-tile > img {
+   object-fit: cover;
+   width: 100%;
+ }
+ 
+ .project-tile a {
+   text-decoration: none;
+   color: #22223b;
+ }
+ 
+ .project-tile a:hover {
+   text-decoration: none;
+   color: #9a8c98;
+ }
+ 
+ .attribution {
+   font-family: 'Poppins', sans-serif;
+   text-decoration: none;
+   font-size: 8px;
+   color: rgb(45, 66, 99);
+   margin: 0 auto;
+ }
