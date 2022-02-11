@@ -6,13 +6,14 @@ For live preview of these websites, check my Codepen: https://codepen.io/kylie-k
 Previews
 
 
-![Tribute](./Preview Images/Tribute.png?raw=true "Tribute Page")
+![Tribute](https://github.com/leyankoh/Pippi-Pages/blob/7417040296e7aec7c11c99c599a843e002e7ce2b/Preview%20Images/Tribute.png)
 
 
-![Survey](./Preview Images/Survey.png?raw=true "Survey Page")
+![Survey](https://github.com/leyankoh/Pippi-Pages/blob/7417040296e7aec7c11c99c599a843e002e7ce2b/Preview%20Images/Survey.png)
 
-![Product](./Preview Images/Product.png?raw=true "Product Page")
+![Product](https://github.com/leyankoh/Pippi-Pages/blob/7417040296e7aec7c11c99c599a843e002e7ce2b/Preview%20Images/Product.png)
 
-![Documentation](./Preview Images/Documentation.png?raw=true "Documentation Page")
+![Documentation](https://github.com/leyankoh/Pippi-Pages/blob/7417040296e7aec7c11c99c599a843e002e7ce2b/Preview%20Images/Documentation.png)
 
-![Personal](./Preview Images/Personal.png?raw=true "Personal Page")
+![Personal](https://github.com/leyankoh/Pippi-Pages/blob/7417040296e7aec7c11c99c599a843e002e7ce2b/Preview%20Images/Personal.png)
+
